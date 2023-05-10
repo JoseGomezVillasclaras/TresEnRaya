@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Pagina con Botones</title>
+  <style>
+    /* Estilos CSS para los botones */
+    .btn {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: #007bff;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 5px;
+      margin: 10px;
+    }
+
+    /* Estilos CSS para centrar los elementos */
+    body {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    h1 {
+      margin-top: 0;
+    }
+  </style>
+</head>
+<body>
+  <h1>José Antonio</h1>
+  <button id="alertBtn" class="btn">Mostrar Alerta</button>
+  <a href="https://juego.com" class="btn">Ir a juego</a>
+
+  <script>
+    // Código JavaScript para el botón de alerta
+    var alertBtn = document.getElementById('alertBtn');
+    alertBtn.addEventListener('click', function() {
+      alert('José Antonio Gómez Villasclaras 1ºDAW');
+    });
+  </script>
+</body>
+</html>
